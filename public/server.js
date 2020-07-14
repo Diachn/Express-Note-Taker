@@ -14,7 +14,7 @@ app.get("/notes", function(req, res) {
 });
 
 app.get("/api/notes", function(req, res) {
-    res.sendFile("/db/db.json");
+    res.sendFile("./db/db.json");
 });
 
 app.get("/api/notes/:id", function(req, res) {
